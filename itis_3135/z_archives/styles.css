@@ -1,0 +1,39 @@
+body {
+    background-color: #080505;
+    color: #333333;
+    margin: 50;
+    padding: 0;
+}
+.container {
+    background-color:#afa9a9;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(88, 118, 133, 0.1);
+    margin: 100px center;
+    max-width: 600px;
+    padding: 20px;
+} 
+h2{
+    
+    text-align: center;
+} 
+#page-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+#logo-wrapper {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #006633;
+}
+#content-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: center;
+    text-align: left;
+}			
+a {
+    color: #006633;
+}
