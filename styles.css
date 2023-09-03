@@ -2,27 +2,34 @@
     box-sizing: border-box;
   }
 body {
+    background-image: url("https://e0.pxfuel.com/wallpapers/720/439/desktop-wallpaper-website-dark-website.jpg");
     background-color: #f1e9e9;
     color: #333333;
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
   }
 .container {
-    background-color:#e9dfdf;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(88, 118, 133, 0.1);
-    margin: 100px center;
-    max-width: 600px;
-    padding: 20px;
-    } 
+background-color:rgba(182, 157, 181, 0.5);
+border-radius: 10px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+margin: 20px auto;
+max-width: 600px;
+padding: 20px;
+} 
  h1{
-    color:#e0e0e7;
+    color:#f0d6b1;
     align-items: center;
     text-align: center;
 } 
     h2{
         text-align: center;
+        color: #f0d6b1;
     }
+p, li, figcaption{
+    color: #f0d6b1;
+}
   #page-wrapper {
     height: 100%;
     width: 100%;
@@ -110,11 +117,30 @@ body {
     text-decoration: none;
     color: #fff;
   }
-  .footer-wrapper a:hover{
-    color: aqua;
-  }
   
   .footer-wrapper a:hover {
     text-decoration: underline;
+    color: aqua;
+  }
+  .figure {
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    flex-direction: column; /* Change to column to center image and text vertically */
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 10px;
+    gap: 16px;
+  }
+  
+  .figure img {
+    display: block; /* Make the image a block element */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    border: 2px solid #fdb347; /* Apply the border to the image */
+    border-right-width: 2px;
+  }
+  
+  hr{
+    background-color:#fdb347; 
   }
   
