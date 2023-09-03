@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: #f1e9e9;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+  }
+.container {
+    background-color:#e9dfdf;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(88, 118, 133, 0.1);
+    margin: 100px center;
+    max-width: 600px;
+    padding: 20px;
+    } 
+ h1{
+    color:#e0e0e7;
+    align-items: center;
+    text-align: center;
+} 
+    h2{
+        text-align: center;
+    }
+  #page-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+  }
+#content-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: center;
+    text-align: left;
+  }
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+    width: 100%;
+  }	
+  .Home_buttons {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  .Home_buttons button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0a0a23;; 
+    color: #fff;
+    border: 2px solid #fdb347;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(148, 67, 67, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .Home_buttons button:hover {
+    background-color: #2980b9; /* Change the hover background color as desired */
+    color: #fff;
+  }
+  
+ a {
+    color: #eef7f1;
+  }
+  .footer-wrapper {
+    background-color: #0a0a23;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .footer-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-wrapper ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-wrapper ul li:last-child {
+    margin-right: 0; 
+  }
+  
+  .footer-wrapper ul li::after {
+    content: "||";
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .footer-wrapper p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer-wrapper div {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .footer-wrapper a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-wrapper a:hover{
+    color: aqua;
+  }
+  
+  .footer-wrapper a:hover {
+    text-decoration: underline;
+  }
+  
