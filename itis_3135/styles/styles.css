@@ -98,11 +98,13 @@ p, li, figcaption{
     margin-right: 0; 
   }
   
-  .footer-wrapper ul li::after {
+  .footer-wrapper ul li:not(:last-child)::after {
     content: "||";
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+    margin: 0 5px;
+    /* margin-left: 5px;
+    margin-right: 2px; */
+}
+
   
   .footer-wrapper p {
     text-align: center;
@@ -144,4 +146,3 @@ p, li, figcaption{
   hr{
     background-color:#fdb347; 
   }
-  
