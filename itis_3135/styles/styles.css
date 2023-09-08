@@ -146,3 +146,24 @@ p, li, figcaption{
   hr{
     background-color:#fdb347; 
   }
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #2b2b44;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #2b2b44;
+    color: #f1be32;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f5f6f7;
+  }
