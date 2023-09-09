@@ -30,6 +30,7 @@ padding: 20px;
 p, li, figcaption{
     color: #f0d6b1;
 }
+
   #page-wrapper {
     height: 100%;
     width: 100%;
@@ -270,4 +271,8 @@ textarea {
 
 textarea {
   resize: vertical;
+}
+form-group{
+  color: #f0d6b1;
+  text-align: left;
 }
