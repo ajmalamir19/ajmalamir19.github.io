@@ -61,7 +61,7 @@ p, li, figcaption{
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #0a0a23;; 
+    background-color: #0a0a23;
     color: #fff;
     border: 2px solid #fdb347;
     border-radius: 5px;
@@ -238,7 +238,7 @@ input[type="radio"] {
   margin: 20px auto 0;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #FFADAD;
+  background-color:  #0a0a23;
   color: white;
   border: none;
   border-radius: 5px;
@@ -252,7 +252,7 @@ input[type="radio"] {
   margin: 20px auto 0;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #FFADAD;
+  background-color:  #0a0a23;
   color: white;
   border: none;
   border-radius: 5px;
