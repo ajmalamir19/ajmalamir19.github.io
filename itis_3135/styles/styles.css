@@ -273,6 +273,9 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+.comments{
+  text-emphasis-color: #f0d6b1;
+} 
 
 textarea {
   resize: vertical;
