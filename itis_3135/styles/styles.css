@@ -23,10 +23,10 @@ padding: 20px;
     align-items: center;
     text-align: center;
 } 
-    h2{
-        text-align: center;
-        color: #f0d6b1;
-    }
+  h2, h3{
+      text-align: center;
+      color: #f0d6b1;
+  }
 p, li, figcaption{
     color: #f0d6b1;
 }
@@ -164,7 +164,9 @@ p, li, figcaption{
     background-color: #2b2b44;
     color: #f1be32;
   }
-
+  #email{
+    color: #0a0a23;
+  }
   tr:nth-child(even) {
     background-color: #f5f6f7;
   }
