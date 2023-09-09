@@ -233,12 +233,17 @@ input[type="radio"] {
 }
 
 .submit-button {
-    background-color: #2b2b44;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FFADAD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #fdb347;
 }
 
 .reset-button {
