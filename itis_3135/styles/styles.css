@@ -179,6 +179,6 @@ p, li, figcaption{
     background-color: #f5f6f7;
     color: #333333; /* Adjust text color for better visibility */
   }
-  ol{
+  ol, li{
     text-align: center;
   }
