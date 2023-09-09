@@ -231,7 +231,7 @@ input[type="radio"] {
     margin-right: 5px;
 }
 
-.submit-button {
+/* .submit-button {
     background-color: #2b2b44;
     color: #fff;
     padding: 10px 20px;
@@ -252,4 +252,17 @@ input[type="radio"] {
 .submit-button:hover,
 .reset-button:hover {
     background-color: #1b1b32;
+} */
+button {
+  display: block;
+  width: 100%;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #FFADAD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #fdb347;
 }
