@@ -151,22 +151,24 @@ p, li, figcaption{
     margin: 0 auto;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: rgba(182, 157, 181, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
-
   th, td {
     border: 1px solid #2b2b44;
     padding: 8px;
     text-align: left;
     color: #f0d6b1;
   }
-
   th {
     background-color: #2b2b44;
     color: #f1be32;
   }
-  #email{
+  #email {
     color: #0a0a23;
   }
   tr:nth-child(even) {
     background-color: #f5f6f7;
+    color: #333333; /* Adjust text color for better visibility */
   }
