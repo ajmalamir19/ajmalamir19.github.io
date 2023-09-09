@@ -148,7 +148,7 @@ p, li, figcaption{
   hr{
     background-color:#fdb347; 
   }
-  /* table {
+  table {
     width: 80%;
     margin: 0 auto;
     border-collapse: collapse;
@@ -159,7 +159,7 @@ p, li, figcaption{
     margin-bottom: 10px;
   }
   table:last-child {
-    margin-bottom: 20px; /* Add margin to create space between the last table and footer 
+    margin-bottom: 20px; /* Add margin to create space between the last table and footer */
 }
 
   th, td {
@@ -178,43 +178,7 @@ p, li, figcaption{
   tr:nth-child(even) {
     background-color: #f5f6f7;
     color: #333333; /* Adjust text color for better visibility */
-  } */
-
-  table {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: rgba(104, 83, 103, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    border: 1px solid #2b2b44;
-    padding: 8px;
-    text-align: left;
-    color: #f0d6b1;
-}
-
-th {
-    background-color: #2b2b44;
-    color: #f1be32;
-}
-
-#email {
-    color: #87b5fa;
-}
-
-tr:nth-child(even) {
-    background-color: #f5f6f7;
-    color: #333333; /* Adjust text color for better visibility */
-}
-
-tr:nth-child(odd) {
-    background-color: #f1e9e9; /* Background color for odd rows */
-}
-
+  }
   ol, li{
     text-align: center;
   }
