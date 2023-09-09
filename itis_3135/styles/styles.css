@@ -187,7 +187,7 @@ p, li, figcaption{
     list-style-position: inside; /* Place list items inside the numbering */
 }
 
-ol li {
+table liste {
     text-align: left; /* Align list items to the left */
     margin: 10px 0; /* Add some vertical spacing between list items */
 }
