@@ -179,9 +179,19 @@ p, li, figcaption{
     background-color: #f5f6f7;
     color: #333333; /* Adjust text color for better visibility */
   }
-  ol, li{
-    text-align: center;
-  }
+  ol {
+    text-align: center; /* Center-align the text within the <ol> element */
+    margin: 0 auto; /* Center the <ol> element horizontally */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    padding: 0; /* Remove default padding */
+    list-style-position: inside; /* Place list items inside the numbering */
+}
+
+ol li {
+    text-align: left; /* Align list items to the left */
+    margin: 10px 0; /* Add some vertical spacing between list items */
+}
+
   h3{
     font-style: italic;
   }
