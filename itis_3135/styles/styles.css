@@ -81,6 +81,8 @@ p, li, figcaption{
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .footer-wrapper ul {
@@ -154,7 +156,12 @@ p, li, figcaption{
     background-color: rgba(104, 83, 103, 0.5);
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
   }
+  table:last-child {
+    margin-bottom: 20px; /* Add margin to create space between the last table and footer */
+}
+
   th, td {
     border: 1px solid #2b2b44;
     padding: 8px;
