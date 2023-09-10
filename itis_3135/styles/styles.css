@@ -189,12 +189,12 @@ p, li, figcaption{
 }
 
 ol.Tabular-data li::before {
-  content: counter(item);
-  counter-increment: item;
+  /* content: counter(item); */
+  /* counter-increment: item; */
   display: inline-block;
   width: 2em; /* Adjust the width as needed */
   text-align: right; /* Right-align the numbers */
-  margin-right: 10px; /* Add some space between numbers and names */
+  margin-right: 20px; /* Add some space between numbers and names */
 }
 
 table liste {
