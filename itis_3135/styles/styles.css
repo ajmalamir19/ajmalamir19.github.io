@@ -188,6 +188,15 @@ p, li, figcaption{
     list-style-position: inside; /* Place list items inside the numbering */
 }
 
+ol.Tabular-data li::before {
+  content: counter(item);
+  counter-increment: item;
+  display: inline-block;
+  width: 2em; /* Adjust the width as needed */
+  text-align: right; /* Right-align the numbers */
+  margin-right: 10px; /* Add some space between numbers and names */
+}
+
 table liste {
     text-align: left; /* Align list items to the left */
     margin: 10px 0; /* Add some vertical spacing between list items */
