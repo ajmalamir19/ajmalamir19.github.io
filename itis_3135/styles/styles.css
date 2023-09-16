@@ -181,7 +181,7 @@ p, li, figcaption{
     color: #333333; /* Adjust text color for better visibility */
   }
   ol {
-    text-align: center; /* Center-align the text within the <ol> element */
+    text-align: left; /* Center-align the text within the <ol> element */
     margin: 0 auto; /* Center the <ol> element horizontally */
     max-width: 600px; /* Adjust the maximum width as needed */
     padding: 0; /* Remove default padding */
