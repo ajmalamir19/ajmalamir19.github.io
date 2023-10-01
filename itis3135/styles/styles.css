@@ -296,7 +296,7 @@ input[type="radio"] {
 
 .submit-button:hover,
 .reset-button:hover {
-    background-color: #1b1b32;
+    background-color:  #2980b9;;
 }
 
 
@@ -325,4 +325,8 @@ form{
   border-top: 2px solid #f0d6b1; /* Change the color and thickness as needed */
   width: 100%; /* Adjust the width as needed */
   margin: 20px 0; /* Adjust the margin to control the space around the line */
+}
+.Introduction-section{
+  text-align: left;
+
 }
