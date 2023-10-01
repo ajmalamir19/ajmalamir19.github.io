@@ -23,14 +23,19 @@ padding: 20px;
     align-items: center;
     text-align: center;
 } 
-  h2, h3{
+  h2, h3, h4{
       text-align: center;
       color: #f0d6b1;
   }
 p, li, figcaption{
     color: #f0d6b1;
 }
-
+label{
+  color: #f0d6b1;
+}
+.p_contract{
+  text-align: left;
+}
   #page-wrapper {
     height: 100%;
     width: 100%;
@@ -68,6 +73,26 @@ p, li, figcaption{
     box-shadow: 0 2px 4px rgba(148, 67, 67, 0.2);
     transition: background-color 0.3s, color 0.3s;
   }
+  
+  .function-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .function{
+    text-align: center;
+    margin-top: 20px; 
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0a0a23;
+    color: #fff;
+    border: 2px solid #fdb347;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(148, 67, 67, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+ 
   
   .Home_buttons button:hover {
     background-color: #2980b9; /* Change the hover background color as desired */

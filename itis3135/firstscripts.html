@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+    <title>Ajmal Amir The LionHeart | First Scripts</title>
+</head>
+<body>
+    <div id="page-wrapper" class="container">
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <h1>My First JavaScripts</h1>
+        <main>
+            <section>
+                <div class="function">
+                <h2>Today is <span id="current-time"></span></h2>
+            </div>
+            </section>
+            
+            
+            <section>
+                <h2>How are you feeling today?</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="feeling">Feeling:</label>
+                <input type="text" id="feeling">
+                <button onclick="greetUser()" class="submit-button">Submit</button>
+                <p id="greeting"></p>
+            </section>
+            
+            
+            <section>
+                <h2>Enter your favorite number:</h2>
+                <label for="favorite-number">Favorite Number:</label>
+                <input type="text" id="favorite-number">
+                <button onclick="findPolygonName()" class="submit-button">Find Polygon</button>
+            </section>
+
+            <h2>What Amir TechWave can do for you</h2>
+            <section class="function-container">
+                <div class="function">
+                <h4>Calculate Tax</h4>
+                <label for="income">Income:</label>
+                <input type="number" id="income">
+                <label for="tax-rate">Tax Rate (%):</label>
+                <input type="number" id="tax-rate">
+                <button onclick="calculateTax()" class="submit-button">Calculate Tax</button>
+                <p id="tax-result"></p>
+            </div>
+            
+                <div class="function">
+                <h4>Wall Paint Calculator</h4>
+                <label for="height">Height of wall</label>
+                <input type="number" id="height">
+                <label for="width">Width of Wall</label>
+                <input type="number" id="width">
+                <!-- <label for="cover">Paint coverage per can:</label>
+                <input type="number" id="cover"> -->
+                <button onclick="paintCalc()" class="submit-button">Calculate Wall Paint</button>
+                <p id="coverage"></p>
+            </div>
+            
+            <div class="function">
+                <h4>Calculate BMI</h4>
+                <label for="height">Height (meters):</label>
+                <input type="number" id="bmi-height">
+                <label for="weight">Weight (kg):</label>
+                <input type="text" id="weight" name="weight">
+                <button onclick="calculateBMI()" class="submit-button">Calculate BMI</button>
+                <p id="bmi-result"></p>
+            </div>            
+            <!-- </section>
+            <section class="function-container"> -->
+            <div class="function">
+                <h4>Love Calculator</h4>
+                <label for="name1">Enter your name:</label>
+                <input type="text" id="name1">
+                <label for="name2">Enter Her name:</label>
+                <input type="text" id="name2">
+                <button onclick="calculateLoveScore()" class="submit-button">Calculate Love Score</button>
+                <p id="love-score"></p>   
+            </div>
+            </section>
+            
+            
+        </main>
+        
+        <!-- start of the footer -->
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+
+        <script>
+            // Display current time and date
+            function getCurrentTime() {
+                const now = new Date();
+                const options = {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                };
+                const formattedTime = now.toLocaleDateString('en-US', options);
+                document.getElementById('current-time').textContent = formattedTime;
+            }
+            getCurrentTime();
+
+            // Greet the user based on their name and mood
+            function greetUser() {
+                const name = document.getElementById('name').value;
+                const feeling = document.getElementById('feeling').value;
+
+                // Assuming you have a <p> element with the id "greeting"
+                const greetingElement = document.getElementById('greeting');
+
+                if (feeling.toLowerCase() === 'happy') {
+                    greetingElement.textContent = `The Amir TechWave welcomes you, ${name}! We're glad you are feeling happy!`;
+                } else {
+                    greetingElement.textContent = `The Amir TechWave welcomes you. We're sorry you are feeling ${feeling}.`;
+                }
+            }
+
+
+
+            // Find the polygon name based on the favorite number
+            function findPolygonName() {
+                const favoriteNumber = parseFloat(document.getElementById('favorite-number').value);
+                const absFavoriteNumber = Math.abs(favoriteNumber);
+                const roundedFavoriteNumber = Math.round(absFavoriteNumber);
+
+                const polygons = [
+                    'Monogon', 'Digon', 'Trigon', 'Tetragon', 'Pentagon',
+                    'Hexagon', 'Heptagon', 'Octagon', 'Nonagon', 'Decagon'
+                ];
+
+                if (roundedFavoriteNumber >= 0 && roundedFavoriteNumber < polygons.length) {
+                    alert(`The polygon with ${roundedFavoriteNumber} sides is called a ${polygons[roundedFavoriteNumber]}.`);
+                } else {
+                    alert('Please enter a valid number between 0 and 10.');
+                }
+            }
+
+            // Function to calculate tax based on user input
+            function calculateTax() {
+                const income = parseFloat(document.getElementById('income').value);
+                const taxRate = parseFloat(document.getElementById('tax-rate').value);
+
+                // Ensure income and taxRate are valid numbers
+                if (isNaN(income) || isNaN(taxRate)) {
+                    alert("Please provide valid numeric values for income and tax rate.");
+                    return;
+                }
+
+                // Calculate tax amount
+                const taxAmount = (income * taxRate) / 100;
+
+                document.getElementById('tax-result').textContent = `Tax amount: $${taxAmount.toFixed(2)}`;
+            }
+
+            // Function to calculate paint coverage
+            function paintCalc() {
+                const height = parseFloat(document.getElementById('height').value);
+                const width = parseFloat(document.getElementById('width').value);
+                const cover = 5;  // Assuming 5 square feet per can
+
+                // Ensure height, width, and cover are valid numbers
+                if (isNaN(height) || isNaN(width) || isNaN(cover)) {
+                    alert("Please provide valid numeric values for height, width, and paint coverage.");
+                    return;
+                }
+
+                // Calculate the number of paint cans needed
+                const cans = Math.ceil((height * width) / cover);
+                document.getElementById('coverage').textContent = `You'll need ${cans.toFixed(0)} cans of paint.`;
+            }
+
+
+            // Function to calculate BMI based on user input
+            function calculateBMI() {
+            const height = parseFloat(document.getElementById('bmi-height').value);
+            const weight = parseFloat(document.getElementById('bmi-weight').value);
+
+            // Ensure height and weight are valid numbers
+            if (isNaN(height) || isNaN(weight)) {
+                alert("Please provide valid numeric values for height and weight.");
+                return;
+            }
+
+            // Calculate BMI
+            const bmi = (weight / (height ** 2)).toFixed(2);
+
+            let bmiCategory = "";
+
+            if (bmi < 18.5) {
+                bmiCategory = "underweight";
+            } else if (bmi < 25) {
+                bmiCategory = "normal weight";
+            } else if (bmi < 30) {
+                bmiCategory = "slightly overweight";
+            } else {
+                bmiCategory = "obese";
+            }
+
+            document.getElementById('bmi-result').textContent = `Your BMI is ${bmi}, you are ${bmiCategory}.`;
+        }
+            // This funciton calcualte love socore base on user input
+            function calculateLoveScore() {
+            const name1 = document.getElementById('name1').value.toLowerCase();
+            const name2 = document.getElementById('name2').value.toLowerCase();
+
+            let trueTotal = 0;
+            let loveTotal = 0;
+
+            // Calculate trueTotal for name1
+            trueTotal +=
+                name1.split('').reduce((acc, char) => {
+                    if (['t', 'r', 'u', 'e'].includes(char)) {
+                        return acc + 1;
+                    }
+                    return acc;
+                }, 0);
+
+            // Calculate loveTotal for name1
+            loveTotal +=
+                name1.split('').reduce((acc, char) => {
+                    if (['l', 'o', 'v', 'e'].includes(char)) {
+                        return acc + 1;
+                    }
+                    return acc;
+                }, 0);
+
+            // Calculate trueTotal for name2
+            trueTotal +=
+                name2.split('').reduce((acc, char) => {
+                    if (['t', 'r', 'u', 'e'].includes(char)) {
+                        return acc + 1;
+                    }
+                    return acc;
+                }, 0);
+
+            // Calculate loveTotal for name2
+            loveTotal +=
+                name2.split('').reduce((acc, char) => {
+                    if (['l', 'o', 'v', 'e'].includes(char)) {
+                        return acc + 1;
+                    }
+                    return acc;
+                }, 0);
+
+            const finalTotal = `${trueTotal}${loveTotal}`;
+            const score = parseInt(finalTotal);
+
+            let resultMessage = "";
+
+            if (score < 10 || score > 90) {
+                resultMessage = `Your score is ${score}, you go together like coke and mentos.`;
+            } else if (score >= 40 && score <= 50) {
+                resultMessage = `Your score is ${score}, you are alright together.`;
+            } else {
+                resultMessage = `Your score is ${score}.`;
+            }
+
+            document.getElementById('love-score').textContent = resultMessage;
+        }
+        </script>
+    </div> <!-- /#page-wrapper -->
+</body>
+</html>

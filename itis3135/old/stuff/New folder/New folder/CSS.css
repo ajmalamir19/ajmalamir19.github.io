@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(74, 139, 196);
+    box-shadow: 20px;
+    
+}
+h2{
+    font-style: papyrus;
+    color: rgb(203, 207, 211);
+}
+img {
+    animation: zoomInOut 4s ease-in-out infinite alternate,
+               twinkling 2s linear infinite,
+               hilariousFrame 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+.funnyQuit{
+    color: aquamarine;
+    border-radius: 10px;
+    border: 4px solid;
+    border-style: groove;
+    font-family: papyrus;
+    text-align: center;
+    padding-bottom: 10px;
+    animation: zoomInOut 4s ease-in-out infinite alternate,
+               moveLeftRight 4s linear infinite alternate,
+               twinkling 2s linear infinite;
+
+}
+.MarrgeQuit{
+    color: red;
+    font-family:  Calibri;
+    text-align: right;
+    padding-top: 5px;
+    border-top: 10px solid yellow;
+    border-bottom: 10px solid  rgb(221, 6, 6);
+    background-color: aliceblue;
+    animation: zoomInOut 4s ease-in-out infinite alternate,
+               moveRightLeft 4s linear infinite alternate,
+               twinkling 2s linear infinite;
+               
+}
+.dariJok{
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: black;
+    animation: zoomInOut 4s ease-in-out infinite alternate,
+               twinkling 2s linear infinite;
+
+}
+
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hilariousFrame {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+}

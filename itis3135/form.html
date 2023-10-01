@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://webpages.charlotte.edu/aamir/itis3135/styles.css" rel="stylesheet">
+    <title>Ajmal Amir the Lionheart | ITIS 3135 Form</title>
+</head>
+<body>
+    <div id="page-wrapper" class="container">
+        <div data-include="components/header.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+
+        <main>
+            <h2>Form Assignment | ITIS 3135</h2>
+            <div class="form">
+                <form action="process_form.php" method="post"> <!-- Set the action attribute to your PHP file -->
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label>Interests:</label><br>
+                        <label for="interest1"><input type="checkbox" id="interest1" name="interests[]" value="Product"> Product</label><br>
+                        <label for="interest2"><input type="checkbox" id="interest2" name="interests[]" value="Service"> Service</label><br>
+                        <label for="interest3"><input type="checkbox" id="interest3" name="interests[]" value="Support"> Support</label>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label>Preferred Contact Method:</label><br>
+                        <label for="contact1"><input type="radio" id="contact1" name="contactMethod" value="Email"> Email</label><br>
+                        <label for="contact2"><input type="radio" id="contact2" name="contactMethod" value="Phone"> Phone</label><br>
+                        <label for="contact3"><input type="radio" id="contact3" name="contactMethod" value="Mail"> Mail</label>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    <label for="comments" class="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" placeholder="I like coding on the beach..."></textarea>
+                    <hr>
+                    <div class="form-group">
+                        <button type="reset" class="reset-button">Reset</button>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </div> <!-- /#page-wrapper -->
+</body>
+</html>

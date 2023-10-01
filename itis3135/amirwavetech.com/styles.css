@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/13/18/e1/1318e11aee7e8d6c9a9bf0f6368873a9.gif);
+  background-color: #769dd6;
+  color: #36417c;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.header1{
+  background-color: #f8f4f5;
+}
+.container {
+  background-color: rgba(51, 66, 80, 0.87);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(67, 165, 182, 0.1);
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+/* img {
+  width: 150px;
+  object-fit: cover;
+  height: 100px;
+  border: 2px solid #ccc;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  transform: perspective(500px) rotateX(10deg);
+} */
+
+.figure {
+  text-align: center;
+  font-style: italic;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 10px;
+  gap: 1px;
+  color: #cedfeb;
+}
+
+.figure img {
+  display: block; 
+  max-width: 100%; 
+  border: 2px solid #ffd700; 
+  border-right-width: 2px;
+}
+h2, h1 {
+  text-align: center;
+}
+
+#page-wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  
+}
+.footer{
+  height: 100%;
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  background-color: rgba(51, 66, 80, 0.87);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(67, 165, 182, 0.1);
+  margin: 10px auto;
+  padding: 20px;
+  object-fit: cover;
+}
+
+a, h1, h2,p, h4 ,h3{
+  color: #cedfeb;
+}
+h4,h3{
+  text-align: center;
+ 
+
+}
+ol{
+  color: #cedfeb;
+ 
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.logo-container {
+  text-align: center;
+  content: center;
+  position: relative;
+  background-color: #292F43;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #ffd700;
+  animation: wave 1s infinite alternate, zoom 2s infinite alternate;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  align-self: center;
+  /* width: 600px; */
+  /* height: 100%; */
+  width: 100%;
+  max-width: 950px;
+  /* margin: auto; */
+}
+
+.logo {
+  font-size: 30px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 1%;
+  border-radius: 4%;
+  background: linear-gradient(45deg, #00a4e4, #4e00e4, #4e00e4, #00a4e4);
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  position: relative;
+  z-index: 1;
+}
+
+.slogan {
+  background-color: #00a4e4;
+  padding: 5px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.brain-icon {
+  position: absolute;
+  top: -45px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: inherit;
+  z-index: 0;
+  border: 2px solid #ffd700;
+  border-radius: 50%;
+}
+.blue-button {
+  background-color: #00a4e4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* Center the button horizontally */
+.blue-button {
+  display: block;
+  margin: 10 auto;
+  border: 3px solid #ffd700;
+  
+}
+.pragraph{
+  border: 2 px, solid;
+}
+p{
+  text-align: justify;
+
+}
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 950px; /* Corrected the max-width value */
+  margin: 0 auto;
+  padding: 20px 10px;
+} */
+
+.images img {
+  width: 500 px;
+  /* max-width: 400px; */
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgb(214, 16, 32); /* Corrected the border value */
+}
+table{
+  color: #cedfeb;
+  border: solid color(srgb red green blue);
+  text-align: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #c3c3e9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(209, 79, 79, 0.1);
+  margin-bottom: 10px;
+}
+table:last-child {
+  margin-bottom: 20px; /* Add margin to create space between the last table and footer */
+}
+
+th, td {
+  border: 1px solid #a1a1bb;
+  padding: 8px;
+  text-align: left;
+  color: #cedfeb;
+}
+th {
+  background-color: #c3c3e9;
+  color: #3d3624;
+}
+#email {
+  color: #cedfeb;
+}
+tr:nth-child(even) {
+  background-color: #2f3a44;
+  color: #333333; /* Adjust text color for better visibility */
+}
+/* Removed the .images::after block as it's not needed */
+
+
