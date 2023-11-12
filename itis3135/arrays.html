@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Ajmal Amir the Lionheart | ITIS calculator My Style</title>
+</head>
+<body>
+  <div id="page-wrapper" class="container">
+    <div data-include="components/header.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    
+    <main>
+      <h2>Ajmal Amir the Lionheart ITIS 3135</h2>
+      <h2>Arrays</h2>
+      
+      <!-- Input fields and buttons
+      <input type="text" id="name" placeholder="Name">
+      <input type="text" id="salary" placeholder="Salary"> -->
+<!-- Input fields and buttons -->
+<input type="text" id="name" placeholder="Add new names">
+<input type="text" id="salary" placeholder="Add new salary">
+<h3>Or use the list</h3>
+<!-- Replace the input fields with a dropdown list -->
+<select id="nameDropdown">
+  <option value="">Select a Name</option>
+  <option value="John">John</option>
+  <option value="Jane">Jane</option>
+  <option value="Bob">Bob</option>
+  <option value="Alice">Alice</option>
+</select>
+<select id="salaryDropdown">
+  <option value="">Select a Salary</option>
+  <option value="50000">50,000</option>
+  <option value="60000">60,000</option>
+  <option value="70000">70,000</option>
+  <option value="80000">80,000</option>
+</select>
+<button onclick="addSalary()" class="reset-button">Add Salary</button>
+<button onclick="displayResults()" class="reset-button">Display Results</button>
+    <div class="arrays-Result">
+        <h2>Results</h2>
+      <table id="results_table">
+        <!-- Table for displaying results -->
+      </table>
+      <div id="results">
+        <!-- Result display area -->
+      </div>
+    </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/arrays.js"></script>
+  </div>
+</body>
+</html>

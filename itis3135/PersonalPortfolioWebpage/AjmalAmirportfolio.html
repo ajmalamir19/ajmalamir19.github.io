@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmal Amir Portiflio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a08e64bf6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <img src="img/logo.png" alt="logo-image" class="logo">
+        <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#protfolio">Protfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+</div>
+<!-- <div class="background-image">
+    <img src="img/background.png" alt="backgroundimage" />
+</div> -->
+    <div class="header-text">
+        <p>Software Engineer</p>
+        <h1>Hi I'm <span>Ajmal </span><br>Amir from Charlotte</h1>
+    </div>
+</div> <!--end of header section-->
+
+<!--about-->
+<div id="about" class="about"> <!--about-->
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="img/imag-1.jpg" alt="useriamge" >
+        </div>
+            <div class="about-col-2">
+            <h1 class="subt-title">About Me</h1>
+            <p>
+                I am a passionate and driven Computer Science student with
+                a strong commitment to innovation and problem-solving. My 
+                academic journey at the University of North Carolina at 
+                Charlotte has equipped me with a solid foundation in software
+                engineering, coupled with a diverse skill set encompassing 
+                programming languages, database administration, and technical 
+                proficiency. My real-world experiences, including roles in IT
+                support and transportation logistics, have honed my ability
+                to adapt and thrive in dynamic environments. I am dedicated
+                to pushing the boundaries of technology, and my goal is to
+                harness the power of artificial intelligence to 
+                revolutionize the field of education. Join me on this 
+                journey of innovation and transformation.
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Software</span><br>engineering</li>
+                    <li><span>IT</span><br>administration</li>
+                    <li><span>Database</span><br>Managment</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2023</span><br>working as transportation 
+                        Associate amazon.com, Inc - Charlotte</li>
+                    <li><span>2014 - 2018</span><br>IT Specialist & IT Administrative Assistant 
+                        at GARDAWorld Federal Service</li>
+                    <li><span>2013 - 2014</span><br>IT Translator/IT Trainer at DRS Technologies and Eagle System </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2024</span><br>BCS University of North Carolina at Charlotte </li>
+                    <li><span>2025</span><br>MCS University of North Carolina at Charlotte</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</div> <!-----End of About me Section-->
+
+<!--Begining of Services------->
+<div id="services">
+    <div class="container">
+        <h1 class="subt-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Software Development</h2>
+                <p>
+                    Create and maintain software applications, 
+                    websites, and systems using programming languages
+                     such as Java, Python, C++, C#, etc.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                    Design and develop responsive websites, both front-end 
+                    (HTML, CSS, JavaScript) and back-end (server-side scripting,
+                     database management).
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Administration</h2>
+                <p>
+                    Manage and optimize databases, 
+                    ensuring data security, integrity, and efficient retrieval.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-uncharted"></i>
+                <h2>Software Testing and Quality Assurance</h2>
+                <p>
+                    Perform rigorous testing to identify and fix 
+                    software bugs and ensure product quality.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h2>Technical Training</h2>
+                <p>
+                    Train end-users and team members on 
+                    software and technology usage, ensuring efficient operation.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-sitemap"></i>
+                <h2>Software Architecture</h2>
+                <p>
+                    Design robust software architectures 
+                    and systems for scalability and performance.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Technical Documentation</h2>
+                <p>
+                    Create comprehensive technical documentation, including user manuals,
+                     API documentation, and system diagrams
+                </p>
+                <a href="#">learn More</a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</div> <!--End of Serivces-->
+
+<!---begining of Portfolio-->
+<div id="protfolio">
+    <div class="container">
+        <h1 class="subt-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.png" alt="My work one image">
+                <div class="layer">
+                    <h3>Electricity Billing System</h3>
+                    <p>
+                        The Electricity Billing System is an innovative
+                        software application built using Java programming.
+                        Its primary objective is to modernize and streamline
+                        the electricity billing process. This entails precisely 
+                        computing the electricity consumption over a designated 
+                        period and determining the corresponding payment to be made 
+                        at the electricity offices. By introducing this computerized 
+                        system, it promises to enhance the billing experience for 
+                        consumers, making it simpler, more accessible, and highly 
+                        efficient.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.png" alt="My work one image">
+                <div class="layer">
+                    <h3>Afghan KitchenConvenience website</h3>
+                    <p>
+                        The website I've developed is a platform dedicated to Afghan cuisine and dining, 
+                        offering a range of services. It showcases experienced chefs 
+                        with deep expertise in Afghan culinary traditions, providing 
+                        guidance on preparing popular dishes. The emphasis is on using 
+                        high-quality ingredients and exceptional cooking techniques to 
+                        ensure a delightful dining experience. Users can conveniently 
+                        place food orders online through the website, either by calling 
+                        the business or using Facebook chat. The platform caters to 
+                        larger gatherings and events, accepting orders for parties with 
+                        ten or more guests, ensuring customers' dining needs are met 
+                        around the clock. It offers a seamless and accessible way for 
+                        individuals to explore authentic Afghan cuisine and learn the 
+                        art of preparing these delightful dishes.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-3.png" alt="My work one image">
+                <div class="layer">
+                    <h3> FreeCode Camp Responsive
+                        Web Design certificate</h3>
+                    <p>
+                        I'm proud to hold a FreeCode Camp Responsive
+                        Web Design certificate, representing approximately 
+                        300 hours of dedication and hard work. This certification
+                        demonstrates my proficiency in creating responsive and 
+                        user-friendly web experiences, utilizing HTML, CSS, CSS
+                        Grid, and Flexbox. I look forward to applying these skills
+                        to design visually appealing and accessible websites 
+                        for businesses and individuals.
+                    </p>
+                    <a href="https://www.freecodecamp.org/certification/fcc4ff68df6-d822-49d3-b532-1fbb7f189928/responsive-web-design">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="img/Work-4.png" alt="My work one image">
+                <div class="layer ">
+                    <h3> FreeCode Camp Responsive
+                        Web Design certificate</h3>
+                    <p>
+                        I'm proud to hold a FreeCode Camp Responsive
+                        Web Design certificate, representing approximately 
+                        300 hours of dedication and hard work. This certification
+                        demonstrates my proficiency in creating responsive and 
+                        user-friendly web experiences, utilizing HTML, CSS, CSS
+                        Grid, and Flexbox. I look forward to applying these skills
+                        to design visually appealing and accessible websites 
+                        for businesses and individuals.
+                    </p>
+                    <a href="https://webpages.charlotte.edu/aamir/itis3135/calculator_MyStyle.html">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div><!---End of profitlio-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subt-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> qasim.aimal@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> 704-713-8325</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ajmal-amir-0549159a/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://github.com/ajmalamir19"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.instagram.com/qasim_aimal/"><i class="fa-brands fa-instagram"></i></i></a>
+                </div>
+                <a href="img/Ajmal_Amir_Resume.docx" dowload class="btn btn2">Dwonload Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" id="name" placeholder="your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" cols="22" rows="5"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Designed <i class="fa-solid fa-hand-holding-heart"></i><a href="https://webpages.charlotte.edu/aamir/itis3135/amirwavetech.com/index.html"> by AmirWave Tech</a> &copy; 2023</p>
+    </div>
+</div>
+
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzpeJmTKbmhhlGJTS2bWFybeb3degqW7zJZGW0zCfmXqPvJqvPK3hHhT_1Yt5cXVUQiuQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+      msg.innerHTML = "Message sent successfully"
+      setTimeout(function(){
+        msg.innerHTML = "";
+      }, 5000)
+
+      form.reset()
+  })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</html>

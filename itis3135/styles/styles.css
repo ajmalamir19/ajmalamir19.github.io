@@ -10,6 +10,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+  
 .container {
 background-color:rgba(182, 157, 181, 0.5);
 border-radius: 10px;
@@ -17,6 +18,40 @@ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 margin: 20px auto;
 max-width: 600px;
 padding: 20px;
+
+/* Media query for small devices */
+@media only screen and (min-width: 980px) {
+  .container {
+      height: 118px;
+      border-bottom: 0;
+  }
+  body{
+    height: 118px;
+      border-bottom: 0;
+  }
+  .header{
+      height: 118px;
+      border-bottom: 0;
+      width: 100%;
+      padding: 16px; 
+  }
+  .Home_buttons{
+    width: 100;
+    margin: 10px;
+  }
+  .submit-button{
+    width: 100%;
+  }
+  /* Add any additional styles for small devices here */
+}
+
+.function ,.submit-button {
+  max-width: 100%; /* Set the maximum width to 100% of the parent container */
+  overflow: hidden; /* Hide content that overflows the container */
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+
 } 
  h1{
     color:#f0d6b1;
@@ -330,3 +365,274 @@ form{
   text-align: left;
 
 }
+/* calcualor my disgin */
+.Calc_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background-color: #0a0a23;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex; /* Make the calculator flex container */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); /* Fix the box shadow */
+  background: transparent;
+  font-size: 20px;
+  color: #cccce2;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 2em;
+  border: solid;
+
+  
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  width: 100%; /* Make the display wider */
+
+}
+#display{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+  
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none; /* Remove the box shadow */
+  border-style: none;
+}
+
+form input.equal {
+  width: 145px;
+  overflow:auto;
+}
+
+form input.operator{
+  color: #3fd8bc;
+  border: solid;
+  overflow:auto;
+  
+}
+
+/* Calculator styling for smaller screens */
+@media only screen and (max-width: 767px) {
+  .calculator {
+    padding: 10px;
+    overflow:auto;
+    text-align: center;
+  }
+ 
+
+  .calculator form input {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 2px;
+    overflow:auto;
+    white-space: nowrap; /* Prevent text from wrapping */
+   
+     
+  }
+
+  .calculator from button{
+    text-align: center;
+  }
+  
+  input[type="value"]{
+    text-align:  center;
+    overflow:auto;
+    align-items: center;
+  }
+
+  #display {
+    font-size: 30px;
+
+  }
+
+
+  form input.equal {
+    width: 87px;
+
+  }
+  
+}
+
+
+/* calculater_fcc style start fro her */
+.cal-fcc-container{
+  /* max-width: 20em; */
+  text-align: center;
+  align-items: center;
+}
+.calculator_fcc{
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  max-width: 15em;
+  overflow: hidden;
+}
+.calculator__display #result  {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.714285714em;
+  padding: 0.6em 0.75em;
+  text-align: right;
+  margin-bottom: 0;
+
+}
+
+.calculator__keys {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator__keys > * {
+  background-color: #fff;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.calculator__keys > *:active::before,
+.calculator__keys > .is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.key--operator {
+  background-color: #eee;
+}
+
+.key--equal {
+  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
+
+
+/* Calculatry try me AS HOMEWORK Style start from here*/
+#calculator {
+            background: rgba(187, 15, 15, 0.2);
+            border: 1px solid rgba(209, 17, 17, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+        }
+
+        #result {
+            background: rgba(238, 236, 236, 0.1);
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            text-align: right;
+            width: 100%;
+            padding: 10px;
+            color: rgb(223, 227, 230);
+        }
+
+        input[type="button"] {
+            background: rgba(167, 167, 112, 0.5);
+            border: solid;
+            border-radius: 5px;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+            border-color: #fdb347;;
+            box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 10em;
+            color: #eef7f1;
+            
+            
+        }
+
+        input[type="button"]:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .calculator-buttons input{
+          color: black;
+        }
+
+                /* Media query for smaller screens, like mobile devices */
+          @media only screen and (max-width: 767px) {
+            #calculator {
+                padding: 10px; /* Reduce padding to make it more compact */
+            }
+
+            #result {
+                font-size: 18px; /* Decrease font size for smaller screens */
+            }
+            input[type="value"]{
+              text-align:  center;
+              overflow:auto;
+            }
+
+            input[type="button"] {
+                width: 100%; /* Decrease button width to fit smaller screens */
+                height: 40px;
+                font-size: 18px; /* Decrease button font size */
+                margin: 2px; /* Reduce margin for smaller screens */
+                overflow:auto;
+            }
+            table {
+              width: 100%;
+              max-width: 100%;
+              overflow-x: auto; /* Add horizontal scrolling when necessary */
+              border-collapse: collapse;
+              margin-top: 10px;
+              background-color: rgba(104, 83, 103, 0.5);
+              border-radius: 10px;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+              margin-bottom: 10px;
+              overflow:auto;
+          }
+          
+}
+
+/*-----------------Array-Section------*/
+.arrays-Result{
+  text-align: center;
+    margin-top: 20px; 
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0a0a23;
+    color: #fff;
+    border: 2px solid #fdb347;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(148, 67, 67, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+  }

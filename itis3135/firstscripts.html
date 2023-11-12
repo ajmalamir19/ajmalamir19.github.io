@@ -18,7 +18,6 @@
             </div>
             </section>
             
-            
             <section>
                 <h2>How are you feeling today?</h2>
                 <label for="name">Name:</label>
@@ -27,7 +26,7 @@
                 <input type="text" id="feeling">
                 <button onclick="greetUser()" class="submit-button">Submit</button>
                 <p id="greeting"></p>
-            </section>
+            </section>          
             
             
             <section>
@@ -66,10 +65,11 @@
                 <label for="height">Height (meters):</label>
                 <input type="number" id="bmi-height">
                 <label for="weight">Weight (kg):</label>
-                <input type="text" id="weight" name="weight">
+                <input type="text" id="weight">
                 <button onclick="calculateBMI()" class="submit-button">Calculate BMI</button>
                 <p id="bmi-result"></p>
-            </div>            
+              </div>
+            
             <!-- </section>
             <section class="function-container"> -->
             <div class="function">
@@ -108,20 +108,19 @@
             getCurrentTime();
 
             // Greet the user based on their name and mood
-            function greetUser() {
-                const name = document.getElementById('name').value;
-                const feeling = document.getElementById('feeling').value;
+                function greetUser() {
+                    const name = document.getElementById('name').value;
+                    const feeling = document.getElementById('feeling').value;
 
-                // Assuming you have a <p> element with the id "greeting"
-                const greetingElement = document.getElementById('greeting');
+                    // Assuming you have a <p> element with the id "greeting"
+                    const greetingElement = document.getElementById('greeting');
 
-                if (feeling.toLowerCase() === 'happy') {
-                    greetingElement.textContent = `The Amir TechWave welcomes you, ${name}! We're glad you are feeling happy!`;
-                } else {
-                    greetingElement.textContent = `The Amir TechWave welcomes you. We're sorry you are feeling ${feeling}.`;
+                    if (feeling.toLowerCase() === 'happy' || feeling.toLowerCase() === 'sad') {
+                        greetingElement.innerHTML = `The Amir TechWave welcomes you, ${name}! We're glad you are feeling ${feeling}!`;
+                    } else {
+                        greetingElement.innerHTML = `The Amir TechWave welcomes you. ${name} We're sorry you are feeling ${feeling}.`;
+                    }
                 }
-            }
-
 
 
             // Find the polygon name based on the favorite number
@@ -131,16 +130,17 @@
                 const roundedFavoriteNumber = Math.round(absFavoriteNumber);
 
                 const polygons = [
-                    'Monogon', 'Digon', 'Trigon', 'Tetragon', 'Pentagon',
-                    'Hexagon', 'Heptagon', 'Octagon', 'Nonagon', 'Decagon'
+                    'Digon', 'Trigon', 'Tetragon', 'Pentagon', 'Hexagon',
+                    'Heptagon', 'Octagon', 'Nonagon', 'Decagon'
                 ];
 
-                if (roundedFavoriteNumber >= 0 && roundedFavoriteNumber < polygons.length) {
-                    alert(`The polygon with ${roundedFavoriteNumber} sides is called a ${polygons[roundedFavoriteNumber]}.`);
+                if (roundedFavoriteNumber >= 2 && roundedFavoriteNumber <= 10) {
+                    alert(`The polygon with ${roundedFavoriteNumber} sides is called a ${polygons[roundedFavoriteNumber - 2]}.`);
                 } else {
-                    alert('Please enter a valid number between 0 and 10.');
+                    alert('Please enter a valid number between 2 and 10.');
                 }
             }
+
 
             // Function to calculate tax based on user input
             function calculateTax() {
@@ -177,33 +177,33 @@
             }
 
 
-            // Function to calculate BMI based on user input
-            function calculateBMI() {
-            const height = parseFloat(document.getElementById('bmi-height').value);
-            const weight = parseFloat(document.getElementById('bmi-weight').value);
+                function calculateBMI() {
+        // Ensure height and weight are valid numbers
+        const height = parseFloat(document.getElementById('bmi-height').value);
+        const weight = parseFloat(document.getElementById('bmi-weight').value);
 
-            // Ensure height and weight are valid numbers
-            if (isNaN(height) || isNaN(weight)) {
-                alert("Please provide valid numeric values for height and weight.");
-                return;
-            }
+        if (isNaN(height) || isNaN(weight)) {
+            alert('Please provide valid numeric values for height and weight.');
+            return;
+        }
 
-            // Calculate BMI
-            const bmi = (weight / (height ** 2)).toFixed(2);
+        // Calculate BMI
+        const bmi = (weight / (height ** 2)).toFixed(2);
 
-            let bmiCategory = "";
+        // Determine BMI category
+        let bmiCategory = "";
+        if (bmi < 18.5) {
+            bmiCategory = "Underweight";
+        } else if (bmi < 25) {
+            bmiCategory = "Normal weight";
+        } else if (bmi < 30) {
+            bmiCategory = "Slightly overweight";
+        } else {
+            bmiCategory = "Obese";
+        }
 
-            if (bmi < 18.5) {
-                bmiCategory = "underweight";
-            } else if (bmi < 25) {
-                bmiCategory = "normal weight";
-            } else if (bmi < 30) {
-                bmiCategory = "slightly overweight";
-            } else {
-                bmiCategory = "obese";
-            }
-
-            document.getElementById('bmi-result').textContent = `Your BMI is ${bmi}, you are ${bmiCategory}.`;
+        // Display BMI result
+        document.getElementById('bmi-result').textContent = `Your BMI is ${bmi}, you are ${bmiCategory}.`;
         }
             // This funciton calcualte love socore base on user input
             function calculateLoveScore() {

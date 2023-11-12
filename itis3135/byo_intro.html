@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://webpages.charlotte.edu/aamir/itis3135/styles.css" rel="stylesheet">
+    <title>Ajmal Amir the Lionheart | ITIS 3135 BYO Intro</title>
+</head>
+<body>
+    <section id="Bio_into">
+        <div id="page-wrapper" class="container"> 
+            <div data-include="components/header.html"></div>
+            <script src="scripts/HTMLInclude.min.js"></script>
+
+            <main>
+                <h2>Time to BYO Intro page, please fill out the form below so we can create your own page.</h2>
+                <div class="form">
+                    <form id="infoForm">
+                        <div class="form-group">
+                            <label>Name:
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                        </label>
+                            <label>Mascot:
+                            <input type="text" id="Mascot" name="mascot" placeholder="Enter your Mascot">
+                        </label>
+                        </div>
+                        <br>
+                       
+                            <label>Upload your image
+                            <input  type="file" name="image" accept=".png, .gpg">
+                        </label>
+                        
+
+                        <div class="form-group">
+                            <label >Image Caption:
+                            <input type="text" name="caption" placeholder="Enter your Image Caption" >
+                        </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Personal Background:
+                            <textarea   name="personalBg"  placeholder="Enter your Personal Background"></textarea>
+                        </label>
+                        </div>
+                        <div class="form-group">
+                            <label >Professional Background:
+                            <textarea name="professionalBg" placeholder="Enter your Professional Background"></textarea>
+                        </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Academic Background:
+                            <textarea  name="academicBg" placeholder="Enter your Academic Background"></textarea>
+                        </label>
+                        </div>
+                      
+                        <div class="form-group">
+                            <label >Background in Web Development:
+                            <textarea name="webDevBg" placeholder="Enter your Background in Web Development"></textarea>
+                        </label>
+                        </div>
+                        <div class="form-group">
+                            <label >Primary Computer Platform:
+                            <textarea  name="platform" required placeholder="Enter your Primary Computer Platform"></textarea>
+                        </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Courses currently taking
+                            <div id="coursesContainer" >
+                              <!-- Text entry boxes will be added here -->
+                            </div>
+                            <button type="button" class="reset-button" onclick="removeCourse(0)" style="display: none;">Delete</button>                        </label>
+                        </div>   
+                        
+                        <button type="button" class="reset-button" onclick="addCourse()">Add Course</button>
+                    
+                          <div class="form-group">
+                            <label>Funny thing?:
+                            <textarea  name="funnyThing" placeholder="Say something funny about yourself"></textarea>
+                        </label>
+                        </div>
+                        <div class="form-group">
+                            <label >Anything else?:
+                            <textarea  name="anythingElse" placeholder="Is There anything else you would like to add?"></textarea>
+                        </label>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label >
+                                <input type="checkbox" name="agreement"> Check here
+                            <label>I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br>
+                            
+                        </label>
+                        </div>
+                        <br></br>
+                        <hr>
+                        <div class="form-group">
+                            <!-- <button type="reset" class="reset-button">Reset</button>
+                            <button type="button"  class="submit-button">Submit</button> -->
+                            <input type="submit" class="submit-button" value="Submit">
+                            <input type="reset" class="reset-button" value="Reset">
+                        </div>
+                    </form>
+                    <div id="output"></div>
+                </div>
+            </main>
+
+            <div data-include="components/footer.html"></div>
+            <script src="scripts/HTMLInclude.min.js"></script>
+        </div> <!-- /#page-wrapper -->
+    </section>
+
+    
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
